@@ -39,17 +39,21 @@ int main() {
 // --- SINH VIÊN VIẾT CODE CỦA HÀM DƯỚI ĐÂY ---
 
 void lamMinTinHieu(float raw[], float smooth[], int n) {
+    if (n <= 0) return;
+
     if (n == 1) {
-        smooth[0] = 0;
+        smooth[0] = raw[0];
         return;
     }
 
-    smooth[0] = (raw[0] + raw[1]) / 3.0f;
+    // Xử lý điểm biên đầu tiên
+    smooth[0] = (raw[0] + raw[1]) / 2.0f;
 
-    for (int i = 1; i < n; i++) {
+    // Xử lý các điểm ở giữa (từ i = 1 đến n - 2)
+    for (int i = 1; i < n - 1; i++) {
         smooth[i] = (raw[i - 1] + raw[i] + raw[i + 1]) / 3.0f;
     }
 
-    smooth[n] = (raw[n - 2] + raw[n - 1]) / 2.0f;
+    // Xử lý điểm biên cuối cùng
+    smooth[n - 1] = (raw[n - 2] + raw[n - 1]) / 2.0f;
 }
- 

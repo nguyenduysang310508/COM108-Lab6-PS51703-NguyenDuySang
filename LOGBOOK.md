@@ -13,8 +13,9 @@
 ### Lần 1: Bài 1 - Bộ Lọc Làm Mịn Tín Hiệu (Moving Average)
 - Trạng thái: Chờ chấm
 - Prompt hỏi AI (nếu có): 
-- Lỗi phát hiện qua Test (nếu có): 
-- Cách sửa / Bài học: 
+- Lỗi phát hiện qua Test (nếu có): FAILED Test 1 (Chuan n=5): Tai vi tri smooth[0] -> Expected: 15.00, Actual: 10.00
+
+- Cách sửa / Bài học: hỏi ai 
 
 ### Lần 2: Bài 1
 - Trạng thái: 
