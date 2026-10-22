@@ -59,8 +59,8 @@ int doDiemNong(int a[][MAX_COLS], int row, int col, int hangPeak[], int cotPeak[
                 int ni = i + dr[k];
                 int nj = j + dc[k];
                 
-                // Gợi ý: Hãy soi thật kỹ điều kiện giới hạn của `ni` và `nj` trong câu lệnh if dưới đây nhé!
-                if (ni >= 0 && ni <= row && nj >= 0 && nj < col) {
+                // Đã sửa ni <= row thành ni < row
+                if (ni >= 0 && ni < row && nj >= 0 && nj < col) {
                     if (a[ni][nj] >= a[i][j]) {
                         isPeak = 0;
                         break;
