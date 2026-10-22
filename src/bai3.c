@@ -48,11 +48,11 @@ void lamMoMaTran(int src[][MAX_COLS], int dest[][MAX_COLS], int row, int col) {
     if (row <= 0 || col <= 0) return;
 
     for (int i = 0; i < row; i++) {
-        // Gợi ý: Hãy soi thật kỹ vị trí khai báo và khởi tạo các biến tích lũy nhé!
-        int sum = 0;
-        int count = 0;
-
         for (int j = 0; j < col; j++) {
+            // Đưa sum và count vào đây để reset về 0 cho MỖI Ô (i, j)
+            int sum = 0;
+            int count = 0;
+
             for (int r = i - 1; r <= i + 1; r++) {
                 for (int c = j - 1; c <= j + 1; c++) {
                     if (r >= 0 && r < row && c >= 0 && c < col) {
