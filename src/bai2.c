@@ -69,7 +69,7 @@ void giaiNenDelta(int delta[], int khoiPhuc[], int n) {
     
     khoiPhuc[0] = delta[0];
     for (int i = 1; i < n; i++) {
-        // Gợi ý nhỏ: Hãy kiểm tra kỹ công thức khôi phục và chỉ số mảng ở dòng này nhé!
-        khoiPhuc[i] = khoiPhuc[i-1] + delta[i-1];
+        // Đã sửa delta[i-1] thành delta[i]
+        khoiPhuc[i] = khoiPhuc[i-1] + delta[i];
     }
 }
